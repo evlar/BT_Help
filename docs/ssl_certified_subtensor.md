@@ -59,22 +59,31 @@
 - To create and edit this file, use:
   ```
   sudo nano /etc/nginx/sites-available/<subdomain.yourdomain.com>.conf
-```
-- Example configuration:
-  ```nginx
+  ```
+- Example configuration: 
+  ```
   server {
       listen 443 ssl;
-      server_name subdomain.yourdomain.com;
+      server_name <subdomain.yourdomain.com>;
 
-      ssl_certificate /etc/letsencrypt/live/subdomain.yourdomain.com/fullchain.pem;
-      ssl_certificate_key /etc/letsencrypt/live/subdomain.yourdomain.com/privkey.pem;
+      ssl_certificate /etc/letsencrypt/live/<subdomain.yourdomain.com>/fullchain.pem;
+      ssl_certificate_key /etc/letsencrypt/live/<subdomain.yourdomain.com>/privkey.pem;
+
+      location / {
+          proxy_pass http://localhost:9944;  # Forward requests to your subtensor on port 9944
+          proxy_http_version 1.1;
+          proxy_set_header Upgrade $http_upgrade;
+          proxy_set_header Connection 'upgrade';
+          proxy_set_header Host $host;
+          proxy_cache_bypass $http_upgrade;
+      }
 
       # Additional Nginx configuration...
   }
   ```
 - Enable the configuration:
   ```bash
-  sudo ln -s /etc/nginx/sites-available/subdomain.yourdomain.com /etc/nginx/sites-enabled/
+  sudo ln -s /etc/nginx/sites-available/<subdomain.yourdomain.com> /etc/nginx/sites-enabled/
   ```
 
 ## 8. Verify and Reload Nginx
