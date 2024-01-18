@@ -69,13 +69,12 @@
       ssl_certificate /etc/letsencrypt/live/subdomain.yourdomain.com/fullchain.pem;
       ssl_certificate_key /etc/letsencrypt/live/subdomain.yourdomain.com/privkey.pem;
 
-      location / {
-          proxy_pass http://localhost:9944;  # Forward requests to your subtensor on port 9944
+      location /ws {
+          proxy_pass http://localhost:9944;  # Forward requests to subtensor node
           proxy_http_version 1.1;
           proxy_set_header Upgrade $http_upgrade;
-          proxy_set_header Connection 'upgrade';
+          proxy_set_header Connection "upgrade";
           proxy_set_header Host $host;
-          proxy_cache_bypass $http_upgrade;
       }
 
       # Additional Nginx configuration...
