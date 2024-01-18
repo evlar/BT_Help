@@ -58,7 +58,7 @@
 - Edit the Nginx configuration file for your site. Create one in `/etc/nginx/sites-available/` and link it in `/etc/nginx/sites-enabled/`.
 - To create and edit this file, use:
   ```
-  sudo nano /etc/nginx/sites-available/subdomain.yourdomain.com
+  sudo nano /etc/nginx/sites-available/<subdomain.yourdomain.com>.conf
 ```
 - Example configuration:
   ```nginx
