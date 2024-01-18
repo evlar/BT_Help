@@ -56,6 +56,10 @@
 
 ## 7. Configure Nginx for SSL
 - Edit the Nginx configuration file for your site. Create one in `/etc/nginx/sites-available/` and link it in `/etc/nginx/sites-enabled/`.
+- To create and edit this file, use:
+  ```
+  sudo nano /etc/nginx/sites-available/subdomain.yourdomain.com
+```
 - Example configuration:
   ```nginx
   server {
