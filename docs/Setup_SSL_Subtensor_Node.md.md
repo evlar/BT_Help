@@ -1,5 +1,5 @@
 
-# SSL Certificate Setup for a Subdomain Using Nginx and Let's Encrypt (with Snap)
+# "Nginx SSL Setup with Let's Encrypt and Snap"
 
 ## 1. Setting Up a Subdomain and DNS 'A' Record
 - **Purchase a Domain Name**: Setup a domain name with a domain registrar, like GoDaddy, Namecheap, or Google Domains.
