@@ -25,4 +25,3 @@
     sudo ufw status                  # Check the status and rules
     ```
 
-Note: Before enabling the firewall, ensure that you have another way to access the server in case of SSH issues. After enabling the firewall, test each service to make sure it's accessible and functioning correctly.
