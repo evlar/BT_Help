@@ -39,5 +39,9 @@
    ```
    sudo ./scripts/run/subtensor.sh -e docker --network mainnet --node-type lite
    ```
+   To run the process in the background, use:
+   ```
+   sudo nohup ./scripts/run/subtensor.sh -e docker --network mainnet --node-type lite > output.log 2>&1 &
+   ```
    Choose the appropriate command based on whether you want a mainnet/testnet and lite/archive node.
    See additional commands at https://github.com/opentensor/subtensor/blob/main/docs/running-subtensor-locally.md#running-docker
