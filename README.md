@@ -6,6 +6,12 @@ Welcome to the Bittensor mining setup documentation repository. This repository 
 
 - [Server Setup Instructions](docs/VPS_Setup.md): Learn how to provision and prepare your server for Bittensor mining, including installing necessary packages and tools.
 
+## Subnet Setup
+
+- [Subnet 8 Setup](docs/subnets/subnet8.md)
+- [Subnet 18 Setup](docs/subnets/subnet18.md)
+- [Subnet 22 Setup](docs/subnets/subnet22.md)
+
 ## Firewall Configuration
 
 - [Configuring the Firewall](docs/Firewall_Setup.md): Secure your mining operations by setting up the firewall rules using `ufw`.
