@@ -6,6 +6,11 @@ Welcome to the Bittensor mining setup documentation repository. This repository 
 
 - [Server Setup Instructions](docs/VPS_Setup.md): Learn how to provision and prepare your server for Bittensor mining, including installing necessary packages and tools.
 
+## Subtensor Node Setup
+
+- [Setting Up a Subtensor Node Using Docker](docs/Subtensor_Docker_Setup.md): Follow these steps to set up a Subtensor node using Docker, which is required for mining on Bittensor.
+
+
 ## Subnet Setup
 
 - [Subnet 8 Setup](docs/subnets/subnet8.md)
@@ -16,9 +21,6 @@ Welcome to the Bittensor mining setup documentation repository. This repository 
 
 - [Configuring the Firewall](docs/Firewall_Setup.md): Secure your mining operations by setting up the firewall rules using `ufw`.
 
-## Subtensor Node Setup
-
-- [Setting Up a Subtensor Node Using Docker](docs/Subtensor_Docker_Setup.md): Follow these steps to set up a Subtensor node using Docker, which is required for mining on Bittensor.
 
 ## SSL Configuration
 
