@@ -42,3 +42,9 @@
   
    Choose the appropriate command based on whether you want a mainnet/testnet and lite/archive node.
    See additional commands at https://github.com/opentensor/subtensor/blob/main/docs/running-subtensor-locally.md#running-docker
+
+3. **Test the Node**:
+   Now test the subtensor to see if it is up and running by displaying the bittensor metagraph for a subnet:
+   ```
+   btcli s metagraph --subtensor.network local
+   ```
