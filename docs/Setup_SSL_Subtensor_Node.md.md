@@ -4,7 +4,7 @@
 ## 1. Setting Up a Subdomain and DNS 'A' Record
 - **Purchase a Domain Name**: Setup a domain name with a domain registrar, like GoDaddy, Namecheap, or Google Domains.
 - **Create a Subdomain**: Log into your domain management service and create a new subdomain (e.g., `node1.yourdomain.com`).
-- **DNS 'A' Record**: Create a DNS 'A' record for the subdomain, pointing it to the IP address of your server.
+- **DNS 'A' Record**: Create a DNS 'A' record for the subdomain, pointing it to the IP address of your server. Typically this means going to the domain settings page, look for the "DNS" or "Manage DNS" button and click on it. This will take you to the DNS Management page where you can add, modify, and delete DNS records. You want to "Add" a new record
 
 ## 2. Install Nginx on Your Server
 - **Update package lists**:
