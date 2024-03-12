@@ -113,5 +113,6 @@
 
 ## 10. Final Checks
 - Verify that your site is accessible via HTTPS and that the SSL certificate is correctly installed.
+- Ensure that all necessary SSL directives and WebSocket proxying directives are included in the conf file, and that you do not have conflicting .conf files (Apache2 creates a '000' default ssl directive file that you may need to consolidate with your websocket proxying conf file. To do this, simply add the necessary lines, and disable the default, reload and restart.
 
 **Note**: This is a general process for setting up an SSL certificate for a subdomain using Nginx and Let's Encrypt. Specific details may vary depending on server configuration and domain provider.
