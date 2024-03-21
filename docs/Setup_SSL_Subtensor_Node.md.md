@@ -4,7 +4,7 @@
 ## 1. Setting Up a Subdomain and DNS 'A' Record
 - **Purchase a Domain Name**: Setup a domain name with a domain registrar, like GoDaddy, Namecheap, or Google Domains.
 - **Create a Subdomain**: Log into your domain management service and create a new subdomain (e.g., `node1.yourdomain.com`).
-- **DNS 'A' Record**: Create a DNS 'A' record for the subdomain, pointing it to the IP address of your server.
+- **DNS 'A' Record**: Create a DNS 'A' record for the subdomain, pointing it to the IP address of your server. Typically this means going to the domain settings page, look for the "DNS" or "Manage DNS" button and click on it. This will take you to the DNS Management page where you can add, modify, and delete DNS records. You want to "Add" a new record
 
 ## 2. Install Nginx on Your Server
 - **Update package lists**:
@@ -113,5 +113,6 @@
 
 ## 10. Final Checks
 - Verify that your site is accessible via HTTPS and that the SSL certificate is correctly installed.
+- Ensure that all necessary SSL directives and WebSocket proxying directives are included in the conf file, and that you do not have conflicting .conf files (Apache2 creates a '000' default ssl directive file that you may need to consolidate with your websocket proxying conf file. To do this, simply add the necessary lines, and disable the default, reload and restart.
 
 **Note**: This is a general process for setting up an SSL certificate for a subdomain using Nginx and Let's Encrypt. Specific details may vary depending on server configuration and domain provider.
